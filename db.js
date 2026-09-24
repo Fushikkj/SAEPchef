@@ -7,5 +7,5 @@ export const pool = new Pool({
   port: 5432,
   user: 'postgres',
   password: 'postgres',
-  database: 'chefsaep'
+  database: 'SAEPchef'
 });
