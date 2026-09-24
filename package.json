@@ -2,6 +2,28 @@
   "dependencies": {
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "multer": "^2.4.0",
     "pg": "^8.23.0"
-  }
+  },
+  "name": "saepchef",
+  "version": "1.0.0",
+  "type":"module",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fushikkj/SAEPchef.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC", 
+  "bugs": {
+    "url": "https://github.com/Fushikkj/SAEPchef/issues"
+  },
+  "homepage": "https://github.com/Fushikkj/SAEPchef#readme"
 }
