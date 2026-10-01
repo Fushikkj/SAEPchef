@@ -1,11 +1,18 @@
-import pg from 'pg';
+import pg from "pg";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const { Pool } = pg;
 
 export const pool = new Pool({
-  host: 'localhost',
-  port: 5432,
-  user: 'postgres',
-  password: 'postgres',
-  database: 'SAEPchef'
+    user: process.env.DB_USER,
+    host: process.env.DB_HOST,
+    database: process.env.DB_NAME,
+    password: process.env.DB_PASSWORD,
+    port: process.env.DB_PORT
 });
+
+export const query = (text, params) => {
+    return pool.query(text, params);
+};
